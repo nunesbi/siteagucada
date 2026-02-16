@@ -96,15 +96,6 @@ To run locally:
 3. Ensure PHP is enabled for contact functionality  
 
 
-## 📈 Future Improvements
-
-- Admin dashboard  
-- Event registration system  
-- Database integration  
-- Dynamic content management  
-- Performance optimization  
-
-
 ## 👩🏻‍💻 Maintainer
 
 **Bianca Nunes**  
