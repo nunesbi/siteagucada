@@ -78,7 +78,7 @@ public_html/
 
 The contact form sends messages directly to:
 
-diretoria@atleticaagucada.com
+diretoria@atleticaagucada.com.br
 
 - Built with PHP  
 - Success message with smooth animation  
