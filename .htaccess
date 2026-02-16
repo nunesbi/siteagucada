@@ -1,0 +1,20 @@
+# Clean URLs (remove .html) + map main routes to /pages/*.html
+RewriteEngine On
+
+# Redirect any direct .html access to clean URL
+RewriteCond %{THE_REQUEST} \s/+([^\s?]+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Main routes (root-level)
+RewriteRule ^sobre/?$ pages/sobre.html [L]
+RewriteRule ^modalidades/?$ pages/modalidades.html [L]
+RewriteRule ^midia/?$ pages/midia.html [L]
+RewriteRule ^calouros/?$ pages/calouros.html [L]
+RewriteRule ^contato/?$ pages/contato.html [L]
+RewriteRule ^faq/?$ pages/faq.html [L]
+RewriteRule ^kit-de-marca/?$ pages/kit-de-marca.html [L]
+RewriteRule ^transparencia/?$ pages/transparencia.html [L]
+
+# Generic: /pages/foo -> /pages/foo.html (and same for any folder)
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
