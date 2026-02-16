@@ -75,7 +75,7 @@ $FROM_NAME  = "Site Aguçada";
 $TO_EMAIL   = "diretoria@atleticaagucada.com.br";
 
 $SMTP_USER = $FROM_EMAIL;
-$SMTP_PASS = "Diretoria2026!"; 
+$SMTP_PASS = "?"; 
 
 
 $subject = $assunto;
